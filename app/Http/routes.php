@@ -41,7 +41,7 @@
 
 
     			]);
-    		Route::get('/logout', [
+    Route::get('/logout', [
 		'uses' => 'UserController@getLogout',
 		'as' => 'logout'
 	]);

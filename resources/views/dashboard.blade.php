@@ -1,4 +1,4 @@
-<h1>The DASHBOARD</h1>@extends('layouts.master')
+@extends('layout.master')
 
 @section('content')
 	@include('includes.message-block')

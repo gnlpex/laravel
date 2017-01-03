@@ -1,5 +1,4 @@
-nes (43 sloc)  2.36 KB
-@extends('layouts.master')
+@extends('layout.master')
 
 @section('title')
     Welcome!
@@ -10,7 +9,7 @@ nes (43 sloc)  2.36 KB
     <div class = "row">
         <div class = "col-md-6">
             <h3>Sign Up</h3>
-            <form action = "{{ route('signup') }}" method = "post">
+            <form action = "{{ route('signup') }}" method = "post">  
                 <div class = "form-group {{$errors->has('email') ? 'has-error': '' }}">
                     <label for = "email">Your E-mail</label>
                     <input class = "form-control" type = "text" name = "email" id = "email" value = "{{Request::old('email')}}">

@@ -6,8 +6,16 @@
 
 @section('content')
     @include('includes.message-block')
-    <div class = "row">
-        <div class = "col-md-6">
+    <style>
+    body {
+    background-color: lightblue;
+    }
+
+    </style>
+
+<body >
+    <div class = "row" style="padding-top: 50px;" >
+        <div class = "col-md-6" >
             <h3>Sign Up</h3>
             <form action = "{{ route('signup') }}" method = "post">  
                 <div class = "form-group {{$errors->has('email') ? 'has-error': '' }}">
@@ -26,7 +34,7 @@
                 <input type = "hidden" name = "_token" value = "{{ Session::token() }}">
             </form>
         </div>
-        <div class = "col-md-6">
+        <div class = "col-md-6" >
             <h3>Sign In</h3>
             <form action = "{{ route('signin')}}" method = "post">
                 <div class = "form-group {{$errors->has('email') ? 'has-error': ''}}">
@@ -42,4 +50,5 @@
             </form>
         </div>
     </div>
+    </body>
 @endsection

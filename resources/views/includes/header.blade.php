@@ -1,16 +1,23 @@
 <style>
    header {
     font-size: 20px;
-    font-family: Calibri;
+    font-family: "Inconsolata", sans-serif;
+
   
 }
+.navbar{
+    background-image: url("header.jpg");
+    padding-bottom: 40px;
+
+}
+
 .navbar-brand{
-  font-size: 50px;
+  font-size: 80px;
   font-style: italic;
   font-family: Impact,sans-serif;
   font-stretch: extra-condensed;
-  padding-left: 50px;
-  padding-top: 20px;
+  padding-left: 20px;
+  padding-top: 40px;
   text-align: center;
 }
 </style>
@@ -31,7 +38,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-top: 20px;">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="{{ route('account')}}">Account</a></li>
         <li><a href="{{ route('logout')}}">Logout</a></li>

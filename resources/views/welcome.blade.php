@@ -6,14 +6,36 @@
 
 @section('content')
     @include('includes.message-block')
+
     <style>
-    body {
-    background-color: lightblue;
-    }
+        body{
+            background-color:  #3385ff;
 
-    </style>
+        }
+        
+        .row{
+            background-image: url("header.jpg");
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-weight: 800;
+            font: italic bold 80px/80px Georgia, serif;
+        }   
+        </style>
 
-<body >
+   <head>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <CENTER><h1 id="homeHeading">S N A P & T E L L</h1></CENTER>
+                <hr>
+                <center><h3>Capture your life moments and share them with your friends! </h3></center>
+               
+            </div>
+        </div>
+    </header>
+
+
+<body>
     <div class = "row" style="padding-top: 50px;" >
         <div class = "col-md-6" >
             <h3>Sign Up</h3>
